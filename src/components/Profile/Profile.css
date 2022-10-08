@@ -1,0 +1,45 @@
+.profile {
+    background-color: white;
+    border-radius: 6px;
+    width: 100%;
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+.profile__name {
+    line-height: 18px;
+    padding: 20px;
+}
+
+.profile__name .name {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.profile__name .title {
+    font-size: 13px;
+    color: #777;
+}
+
+.profile__image {
+    margin-top: -10px;
+    -webkit-clip-path: polygon(0 9%, 100% 0, 100% 94%, 0 100%);
+    clip-path: polygon(0 9%, 100% 0, 100% 94%, 0 100%);
+}
+
+.profile__image img {
+    width: 100%;
+}
+
+.profile .button__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile__info {
+    top: 0;
+    left: 0;
+    margin: -44px 10px 30px;
+}

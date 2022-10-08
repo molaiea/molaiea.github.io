@@ -1,0 +1,25 @@
+.custom__btn {
+    background-color: var(--color-primary) !important;
+    border-radius: 30px !important;
+    font-weight: 600 !important;
+    color: black !important;
+    text-transform: none !important;
+    padding: 3px 14px 3px!important;
+    outline: none !important;
+    min-width: 100px !important;
+    line-height: 35px !important;
+    border: 0 !important;
+}
+
+.custom__btn .btn__icon__container {
+    color: black !important;
+    background-color: white !important;
+    border-radius: 50px !important;
+    height: 27px !important;
+    width: 27px !important;
+    line-height: 29px !important;
+    text-align: center !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}

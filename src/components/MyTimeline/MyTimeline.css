@@ -1,0 +1,54 @@
+.timeline {
+    padding: 0 !important;
+}
+
+.timeline .timeline__header {
+    min-height: 80px !important;
+}
+
+.timeline .MuiTimelineItem-root {
+    min-height: 60px;
+}
+
+.timeline .MuiTimelineItem-missingOppositeContent:before {
+    display: none;
+}
+
+.timeline .timeline__dot__header {
+    color: black;
+    background-color: var(--color-primary) !important;
+    font-size: small !important;
+    padding: 10px !important;
+    margin-left: 3px !important;
+}
+
+.timeline .timeline__dot {
+    border-color: var(--color-primary) !important;
+    border-style: solid !important;
+    border-width: 4px;
+    padding: 3px !important;
+    margin-left: 2px;
+}
+
+.timeline .MuiTimelineConnector-root {
+    background-color: transparent !important;
+    border-left: 2px dashed var(--color-primary); 
+    margin-left: 2px;
+}
+
+.timeline .timeline__dot__header > .MuiSvgIcon-root {
+    font-size: 20px !important;
+}
+
+.timeline .separator__padding {
+    padding-left: 16px !important;
+}
+
+.timeline .timeline__content {
+    padding-top: 0px !important;
+    margin-bottom: 20px;
+}
+
+.item__name {
+    font-weight: 600;
+}
