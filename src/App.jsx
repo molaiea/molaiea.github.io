@@ -22,8 +22,8 @@ function App() {
             <div className="main__contents containe__shadow">
             <Routes>
               {/* <Route path='/portfolio' element={<Portfolio />} /> */}
-              <Route  path='https://molaiea.github.io/myresume' element={<Resume />} />
-              <Route  path='https://molaiea.github.io/myresume/contact_me' element={<Contact />} />
+              <Route  path='/myresume' element={<Resume />} />
+              <Route  path='/myresume/contact_me' element={<Contact />} />
             </Routes>
             </div>
           </Router>
