@@ -16,7 +16,7 @@ const MyTimeline = ({ title, icon, children }) => {
         <TimelineItem className='first__item'>
             <TimelineSeparator>
                 <TimelineDot className='timeline__dot__header'>
-                  <AutoAwesomeIcon />
+                  {icon}
                 </TimelineDot>
                 <TimelineConnector />
             </TimelineSeparator>
@@ -28,33 +28,45 @@ const MyTimeline = ({ title, icon, children }) => {
         </TimelineItem>
 
         {children.slice(0,-1).map((item) => (
-          <CustomTimelineItem name={item.name} text={item.text}/>
+          <CustomTimelineItem name={item.name} text={item.text} detail={item.detail}/>
         ))}
 
-      <FinalTimelineItem name={children[children.length-1].name} text={children[children.length-1].text}/>
+      <FinalTimelineItem name={children[children.length-1].name} text={children[children.length-1].text} detail={children[children.length-1].detail}/>
     </Timeline>
   )
 }
 
-export const CustomTimelineItem = ({name, text}) => (
+export const CustomTimelineItem = ({name, text, detail}) => (
   <TimelineItem >
           <TimelineSeparator className='separator__padding'>
             <TimelineDot variant='outlined' className='timeline__dot'/>
             <TimelineConnector />
           </TimelineSeparator>
             <TimelineContent className='timeline_content'>
-              <span className="item__name">{name}</span>: {text}
+              {detail ? <div>
+                <span className="item__name">{name}</span> <br />
+                <span >{text}</span> <br />
+                <span >{detail}</span>
+              </div> : <div>
+                <span className="item__name">{name}</span>: {text}</div>}
+              
             </TimelineContent>
   </TimelineItem>
 )
 
-export const FinalTimelineItem = ({name, text}) => (
+export const FinalTimelineItem = ({name, text, detail}) => (
   <TimelineItem >
           <TimelineSeparator className='separator__padding'>
             <TimelineDot variant='outlined' className='timeline__dot'/>
           </TimelineSeparator>
-            <TimelineContent className='timeline_content'>
-              <span className="item__name">{name}</span>: {text}
+          <TimelineContent className='timeline_content'>
+              {detail ? <div>
+                <span className="item__name">{name}</span> <br />
+                <span >{text}</span>
+                <span >{detail}</span>
+              </div> : <div>
+                <span className="item__name">{name}</span>: {text}</div>}
+              
             </TimelineContent>
   </TimelineItem>
 )

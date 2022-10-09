@@ -4,6 +4,8 @@
 
 .timeline .timeline__header {
     min-height: 80px !important;
+    padding-top: 14px !important;
+    font-weight: bolder;
 }
 
 .timeline .MuiTimelineItem-root {

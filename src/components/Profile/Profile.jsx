@@ -5,6 +5,7 @@ import './Profile.css'
 import {personalInfo} from '../../data/resumeData'
 import CustomButton from '../CustomButton/CustomButton'
 import DownloadIcon from '@mui/icons-material/Download';
+import PersonIcon from '@mui/icons-material/Person';
 
 const Profile = () => {
   return (
@@ -19,9 +20,9 @@ const Profile = () => {
         </figure>
 
         <div className="profile__info">
-            <MyTimeline children={personalInfo}/>
+            <MyTimeline icon={<PersonIcon/>} children={personalInfo}/>
             <div className="button__container">
-            <CustomButton text = "Télécharge le CV" icon={<DownloadIcon/>}/>
+            <CustomButton text = "Télécharge le CV" icon={<DownloadIcon/>} value="download"/>
             </div>
         </div>
     </div>

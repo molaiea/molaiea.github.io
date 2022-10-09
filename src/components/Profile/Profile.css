@@ -3,7 +3,6 @@
     border-radius: 6px;
     width: 100%;
     display: inline-block;
-    margin-top: 2rem;
 }
 
 .profile__name {
@@ -42,4 +41,10 @@
     top: 0;
     left: 0;
     margin: -44px 10px 30px;
+}
+
+.container__shadow {
+    box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.13);
+    -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.13);  
 }

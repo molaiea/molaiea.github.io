@@ -26,7 +26,7 @@ const Header = (props) => {
       <Navbar.Toggle />
       <Navbar.Collapse>
         
-        <Nav>
+        <Nav className='header__nav'>
           {/* Resume */}
           <Nav.Link 
           as={NavLink} 
@@ -34,11 +34,17 @@ const Header = (props) => {
           className={pathName =='/' ? "header__link__active" : "header__link"}>
           Resume</Nav.Link>
           {/* Portfolio */}
-          <Nav.Link 
+          {/* <Nav.Link 
           as={NavLink} 
           to="/portfolio" 
           className={pathName =='/portfolio' ? "header__link__active" : "header__link"}>
-          Portfolio</Nav.Link>
+          Portfolio</Nav.Link> */}
+          {/* Contact */}
+          <Nav.Link 
+          as={NavLink} 
+          to="/contact_me" 
+          className={pathName =='/contact_me' ? "header__link__active" : "header__link"}>
+          Contactez-moi</Nav.Link>
         </Nav>
         <div className="header__right">
           {Object.keys(socials).map(key => (
@@ -46,7 +52,7 @@ const Header = (props) => {
               {socials[key].icon}
             </a>
           ))}
-          <CustomButton text={'Hire Me'} icon={<HomeRounded />} />
+          {/* <CustomButton text={'Hire Me'} icon={<HomeRounded />} /> */}
         </div>
       </Navbar.Collapse>
     </Navbar>

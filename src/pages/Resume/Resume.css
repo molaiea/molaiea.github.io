@@ -1,0 +1,22 @@
+.section__title {
+    position: relative;
+    display: inline-block;
+    padding: 0 3px;
+}
+
+.section__title > h6 {
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    margin: 0;
+}
+
+.section__title span {
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    bottom: 0;
+    opacity: 0.4;
+    left: 0;
+    background-color: var(--color-primary);
+}

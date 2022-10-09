@@ -1,0 +1,24 @@
+.css-17282r-MuiLinearProgress-bar1 {
+    background-color: var(--color-primary) !important;
+}
+
+.css-10jyip1-MuiLinearProgress-root {
+    background-color: rgba(237, 229, 13, 0.3) !important;
+}
+
+.skill__title {
+    font-weight: bold;
+    margin-bottom: 0 !important;
+}
+
+.language__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.language__level {
+    font-size: small;
+    margin-bottom: 0 !important;
+}
