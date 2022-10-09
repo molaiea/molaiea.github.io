@@ -18,7 +18,7 @@ const Header = (props) => {
   const pathName = props?.location?.pathname;
   return (
     <Navbar expand="lg" sticky="top" className='header'>
-      <Nav.Link as={NavLink} to="/myresume">
+      <Nav.Link as={NavLink} to="https://molaiea.github.io/myresume">
         <Navbar.Brand className='header__home'>
           <HomeRounded />
         </Navbar.Brand>
@@ -31,7 +31,7 @@ const Header = (props) => {
           <Nav.Link 
           as={NavLink} 
           to="myresume/" 
-          className={pathName =='/myresume' ? "header__link__active" : "header__link"}>
+          className={pathName =='https://molaiea.github.io/myresume' ? "header__link__active" : "header__link"}>
           Resume</Nav.Link>
           {/* Portfolio */}
           {/* <Nav.Link 
@@ -42,8 +42,8 @@ const Header = (props) => {
           {/* Contact */}
           <Nav.Link 
           as={NavLink} 
-          to="/myresume/contact_me" 
-          className={pathName =='/myresume/contact_me' ? "header__link__active" : "header__link"}>
+          to="https://molaiea.github.io/myresume/contact_me" 
+          className={pathName =='https://molaiea.github.io/myresume/contact_me' ? "header__link__active" : "header__link"}>
           Contactez-moi</Nav.Link>
         </Nav>
         <div className="header__right">
