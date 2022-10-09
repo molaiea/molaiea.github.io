@@ -30,7 +30,7 @@ const Header = (props) => {
           {/* Resume */}
           <Nav.Link 
           as={NavLink} 
-          to="myresume/" 
+          to="https://molaiea.github.io/myresume" 
           className={pathName =='https://molaiea.github.io/myresume' ? "header__link__active" : "header__link"}>
           Resume</Nav.Link>
           {/* Portfolio */}
