@@ -30,8 +30,8 @@ const Header = (props) => {
           {/* Resume */}
           <Nav.Link 
           as={NavLink} 
-          to="/" 
-          className={pathName =='/' ? "header__link__active" : "header__link"}>
+          to="/myresume" 
+          className={pathName =='/myresume' ? "header__link__active" : "header__link"}>
           Resume</Nav.Link>
           {/* Portfolio */}
           {/* <Nav.Link 
@@ -42,8 +42,8 @@ const Header = (props) => {
           {/* Contact */}
           <Nav.Link 
           as={NavLink} 
-          to="/contact_me" 
-          className={pathName =='/contact_me' ? "header__link__active" : "header__link"}>
+          to="/myresume/contact_me" 
+          className={pathName =='/myresume/contact_me' ? "header__link__active" : "header__link"}>
           Contactez-moi</Nav.Link>
         </Nav>
         <div className="header__right">
